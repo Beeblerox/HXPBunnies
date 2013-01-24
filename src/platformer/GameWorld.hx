@@ -13,7 +13,6 @@ import com.haxepunk.utils.Input;
 import com.haxepunk.World;
 import nme.Lib;
 import platformer.entities.Bunny;
-import platformer.entities.Player;
 
 class GameWorld extends World
 {
