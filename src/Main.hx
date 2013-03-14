@@ -8,16 +8,8 @@ class Main extends Engine
 
 	override public function init()
 	{
-#if debug
-	#if flash
-		if (flash.system.Capabilities.isDebugger)
-	#end
-		{
-			HXP.console.enable();
-		}
-#end
-		HXP.world = new platformer.GameWorld();
-		
+		HXP.scene = new scenes.GameScene();
+
 		var fps:FPS = new FPS(10, 10, 0);
 		var format = fps.defaultTextFormat;
 		format.size = 20;
